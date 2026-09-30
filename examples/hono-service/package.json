@@ -1,12 +1,13 @@
 {
   "name": "hono-surrealdb-example",
   "version": "1.0.0",
-  "description": "Example Hono service connecting to SurrealDB",
+  "description": "Example Hono service connecting to SurrealDB on TiKV",
   "main": "index.ts",
   "scripts": {
     "dev": "tsx watch index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "tsx test.ts"
   },
   "dependencies": {
     "hono": "^3.12.8",
@@ -16,6 +17,6 @@
   "devDependencies": {
     "@types/node": "^20.11.19",
     "tsx": "^4.7.0",
-    "typescript": "^5.3.3t "
+    "typescript": "^5.3.3"
   }
 }
